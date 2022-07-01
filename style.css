@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  padding-left: 30px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-bar {
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #6070ff;
+  transition: width 2s;
+}
+
+.bar:hover {
+  width: 30px;
+}
+
+.container {
+  background-image: url("images/background-image.svg");
+  background-clip: padding-box;
+  background-position: top;
+  background-size: auto;
+  padding-bottom: 135px;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 40px;
+  margin-bottom: 110px;
+}
+
+.container .name {
+  margin-top: 100px;
+}
+
+.container div {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 205px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+}
+
+.container .about-me {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.container .connect {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.container .social-media {
+  display: flex;
+  gap: 19px;
+  align-items: baseline;
+}
+
+.handles {
+  float: left;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 0;
+  border-radius: 10px;
+}
