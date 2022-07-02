@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,25 +29,12 @@ nav {
 }
 
 .menu {
-  display: none;
+display: none;
 }
 
 .menu-bar {
-  display: block;
   cursor: pointer;
-  margin-right: 20px;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: #6070ff;
-  transition: width 2s;
-}
-
-.bar:hover {
+  margin-right: 25px;
   width: 30px;
 }
 
@@ -60,13 +47,14 @@ nav {
   background-repeat: no-repeat;
   border-bottom-left-radius: 40px;
   margin-bottom: 110px;
+
 }
 
 .container .name {
   margin-top: 100px;
 }
 
-.container div {
+.container section {
   width: 100%;
   padding: 0 24px;
   display: flex;
