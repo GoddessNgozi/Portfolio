@@ -22,7 +22,7 @@ Mobile setup of my portfolio website showcasing the homepage section that includ
 
 ## Authors
 
-👤 **Author1**
+👤 **Ngozika Nwocha**
 
 - GitHub: [@ngozikanwocha](https://github.com/githubhandle)
 - Twitter: [@ngozikanwocha](https://twitter.com/twitterhandle)
