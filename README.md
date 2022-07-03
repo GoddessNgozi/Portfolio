@@ -1,6 +1,6 @@
 # My Portfolio Mobile Setup Project
 
-Mobile setup of my portfolio website showcasing the homepage section that includes a brief introduction about me and what I do.
+Mobile setup of portfolio website showcasing the Homepage section that includes a brief introduction of the software developer, the Works section showing the projects worked on, and the About section.
 
 ## Built With
 
