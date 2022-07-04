@@ -427,6 +427,16 @@ header {
   flex-direction: column;
 }
 
+.language-list li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 9px 12px;
+  background: #f7f7f9;
+  width: 95%;
+}
+
 .language-list p {
   font: normal normal 400 15px 'Poppins', sans-serif;
 }
