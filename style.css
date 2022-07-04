@@ -377,6 +377,17 @@ header {
   padding-left: 12px;
 }
 
+.resume-btn:hover {
+  top: 12px;
+  background: #6070ff;
+  color: #fff;
+}
+
+.resume-btn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
 .about-languages {
   display: flex;
   flex-direction: column;
