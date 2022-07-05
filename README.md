@@ -1,6 +1,6 @@
 # My Portfolio Mobile Setup Project
 
-Mobile setup of portfolio website showcasing the Homepage section that includes a brief introduction of the software developer, the Works section showing the projects worked on, and the About section.
+Mobile setup of portfolio website showcasing the Homepage section that includes a brief introduction of the software developer, the Works section showing the projects worked on, the About section and Contact form to input details and submit form.
 
 ## Built With
 
@@ -42,6 +42,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Special thanks to my partners Elijah Odjegba and Geto Bantealem, my learning partners.
+- Special thanks to Surafel Getachew and Josh Batey, my learning partners/collaborators.
 
 ## 📝 License
 
