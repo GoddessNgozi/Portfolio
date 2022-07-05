@@ -456,3 +456,17 @@ header {
 .about-menus p {
   font: normal normal 500 20px 'Poppins', sans-serif;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+footer h2 {
+  font-family: poppins, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
