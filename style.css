@@ -15,7 +15,7 @@ header {
   background: #fff;
   height: 82px;
   width: 100%;
-  position: fixed;
+  position: relative;
 }
 
 .logo {
@@ -38,35 +38,40 @@ header {
   width: 30px;
 }
 
+main {
+  background-color: #f7f7f9;
+}
+
 .container {
   background-image: url("images/background-image.svg");
   background-clip: padding-box;
   background-position: top;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 40px;
-  margin-bottom: 110px;
-  width: 100%;
+  border-bottom-left-radius: 7rem;
   padding: 0 24px 135px 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background-color: #fff;
+  background-origin: border-box;
 }
 
 .container .name {
-  margin-top: 100px;
-}
-
-.container h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: #172b4d;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 26px;
   line-height: 52px;
-  margin-top: 205px;
+  margin-top: 70px;
+}
+
+.name .hidy {
+  display: none;
 }
 
 .container .about-me {
@@ -76,6 +81,7 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  margin-bottom: 20px;
 }
 
 .container .connect {
@@ -93,20 +99,13 @@ header {
   align-items: baseline;
 }
 
-.handles {
-  float: left;
-  display: flex;
-  align-items: center;
-  padding: 12px 12px 12px 0;
-  border-radius: 10px;
-}
-
 .works {
   display: grid;
-  padding-top: 12px;
   background-color: #f7f7f9;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  padding: 7.125rem 1.5rem;
 }
 
 .project-card {
@@ -115,24 +114,27 @@ header {
   border-radius: 16px;
   border: 1px solid rgb(207, 208, 211);
   margin: 50px auto;
-  padding: 16px 0;
+  padding: 1rem 0 1.5rem 0;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .project-card figure {
   margin: 0 16px;
 }
 
+figure img {
+  width: 100%;
+}
+
 .project-meta img {
-  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .language-list img {
   margin-right: 20px;
-}
-
-.project-card figure img {
-  width: 100%;
 }
 
 .project-details {
@@ -156,51 +158,23 @@ header {
 .project-meta {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-.meta1 {
+.meta {
   color: #344563;
   font-family: 'Poppins', sans-serif;
-  position: static;
-  width: 55px;
-  height: 16px;
-  left: 0;
-  top: 8px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  margin-right: 5px;
 }
 
-.meta2 {
-  position: static;
-  width: 99px;
-  height: 16px;
-  left: 0;
-  top: 8px;
+.meta-data {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-  margin-right: 5px;
-}
-
-.meta3 {
-  position: static;
-  width: 29px;
-  height: 16px;
-  left: 0;
-  top: 8px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-  margin-right: 5px;
 }
 
 footer p {
@@ -219,7 +193,6 @@ footer p {
   color: #344563;
   position: static;
   width: 295px;
-  height: 76px;
   left: 0;
   top: 92px;
 }
@@ -227,46 +200,22 @@ footer p {
 .languages {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 10px;
   list-style: none;
-  float: initial;
+  width: 100%;
+  text-align: center;
 }
 
-.languages .lang1 {
-  float: left;
-  width: 53px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.languages li {
+  padding: 4px 12px;
   border-radius: 8px;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 12px;
   color: #6070ff;
   background: #ebebff;
-}
-
-.languages .lang2 {
-  float: left;
-  width: 40px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
-}
-
-.languages .lang3 {
-  float: right;
-  width: 95px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  color: #6070ff;
-  background: #ebebff;
+  font-family: "Poppins", sans-serif;
+  line-break: strict;
 }
 
 .btn {
@@ -303,17 +252,19 @@ footer p {
 }
 
 .about-myself {
-  box-sizing: border-box;
   padding: 7.125rem 1.5rem;
   background-color: #fff;
-  border-top-right-radius: 5rem;
-  background-clip: padding-box;
+  border-top-right-radius: 7rem;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  width: 327px;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -334,11 +285,6 @@ footer p {
 
 .description {
   font: 400 16px / 24px 'Poppins', sans-serif;
-  position: static;
-  width: 100%;
-  left: 0;
-  top: 113px;
-  height: 170px;
   color: rgb(52, 69, 99);
   margin: 12px 0;
 }
@@ -348,14 +294,9 @@ footer p {
 }
 
 .lets-connect {
-  position: static;
-  width: 117px;
-  height: 24px;
-  left: 0;
-  top: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
@@ -443,7 +384,7 @@ footer p {
   border-radius: 5px;
   padding: 9px 12px;
   background: #f7f7f9;
-  width: 95%;
+  width: 100%;
 }
 
 .language-list p {
@@ -466,18 +407,21 @@ footer p {
   font: normal normal 500 20px 'Poppins', sans-serif;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 24px;
-  align-items: center;
+footer {
   background: #6070ff;
   background-image: url("images/contact-form-image.png");
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 80px 0 0 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  align-items: center;
 }
 
 footer h2 {
@@ -522,7 +466,7 @@ form textarea {
   font-size: 17px;
 }
 
-form button {
+.contact-btn button {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -533,14 +477,140 @@ form button {
   color: #6070ff;
 }
 
-form button:hover {
+.contact-btn button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
 
-form button:active {
+.contact-btn button:active {
   top: 12px;
   background: #2230d2;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: 100px;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    margin-right: 100px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu a {
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .container {
+    background-image: url(images/desktop/headline-background.svg);
+    padding: 6rem;
+    padding: 10rem;
+    padding-right: 15rem;
+    position: relative;
+    background-color: #fff;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+
+  .name .hidy {
+    display: flex;
+  }
+
+  .name .showy {
+    display: none;
+  }
+
+  .project-card {
+    align-items: center;
+    width: 1100px;
+    height: 450px;
+    column-gap: 35px;
+    padding: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .project-details p {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .project-card:nth-child(1),
+  .project-card:nth-child(3) {
+    flex-direction: row;
+  }
+
+  .project-card:nth-child(2),
+  .project-card:nth-child(4) {
+    flex-direction: row-reverse;
+    column-gap: 0;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 37px;
+  }
+
+  .left-block {
+    width: 31%;
+  }
+
+  .right-block {
+    width: 31%;
+  }
+
+  .languages {
+    margin-top: 0;
+  }
+
+  .contact-form p {
+    width: 569px;
+  }
+
+  form {
+    width: 447px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form input {
+    border-radius: 0%;
+  }
+
+  form textarea {
+    border-radius: 0%;
+  }
+
+  footer {
+    background: #6070ff;
+    background-image: url("images/desktop/contact-form-background.svg");
+    background-position: right;
+    background-size: contain;
+    padding: 1rem;
+    background-repeat: no-repeat;
+  }
+
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
