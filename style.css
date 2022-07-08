@@ -630,4 +630,7 @@ form textarea {
     justify-content: center;
     align-items: center;
   }
+  .project-card figure img:hover{
+    transform : scale(1.2);
+  }
 }
