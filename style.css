@@ -492,6 +492,20 @@ form textarea {
 @media (min-width: 768px) {
   .logo {
     margin-left: 100px;
+    color: #2230d2;
+    animation-name: rotate-logo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotate-logo {
+    50% {
+      transform: scale(1.5) rotate(360deg) translate(-50%);
+    }
+
+    to {
+      transform: scale(1) rotate(720deg) translateX(0);
+    }
   }
 
   nav img {
@@ -612,5 +626,9 @@ form textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .project-card figure img:hover {
+    transform: scale(1.2);
   }
 }
