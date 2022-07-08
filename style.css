@@ -492,9 +492,6 @@ form textarea {
 @media (min-width: 768px) {
   .logo {
     margin-left: 100px;
-  }
-
-  .logo {
     color: #2230d2;
     animation-name: rotate-logo;
     animation-duration: 1.5s;
@@ -507,7 +504,7 @@ form textarea {
     }
 
     to {
-      transform: scale(1) rotate(720deg) translateX(0)
+      transform: scale(1) rotate(720deg) translateX(0);
     }
   }
 
@@ -630,7 +627,8 @@ form textarea {
     justify-content: center;
     align-items: center;
   }
-  .project-card figure img:hover{
-    transform : scale(1.2);
+
+  .project-card figure img:hover {
+    transform: scale(1.2);
   }
 }
