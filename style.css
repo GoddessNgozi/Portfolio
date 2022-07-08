@@ -595,6 +595,15 @@ form textarea {
     margin-top: 0;
   }
 
+  .language-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .language-list li {
+    flex-direction: column;
+  }
+
   .contact-form p {
     width: 569px;
   }
