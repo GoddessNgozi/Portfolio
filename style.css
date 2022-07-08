@@ -494,6 +494,23 @@ form textarea {
     margin-left: 100px;
   }
 
+  .logo {
+    color: #2230d2;
+    animation-name: rotate-logo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotate-logo {
+    50% {
+      transform: scale(1.5) rotate(360deg) translate(-50%);
+    }
+
+    to {
+      transform: scale(1) rotate(720deg) translateX(0)
+    }
+  }
+
   nav img {
     display: none;
   }
