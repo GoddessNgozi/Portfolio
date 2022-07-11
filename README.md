@@ -11,7 +11,7 @@ Mobile setup of portfolio website showcasing the Homepage section that includes 
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://ngozikanwocha.github.io/Portfolio/)
 
 
 ## Getting Started
