@@ -8,6 +8,7 @@
   list-style: none;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,11 @@ header {
   width: 100%;
   position: relative;
 }
+/*hide labels to meet figma design*/
+label{
+  display: none;
+}
+
 
 .logo {
   font-size: 18px;
