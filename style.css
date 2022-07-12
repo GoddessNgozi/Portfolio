@@ -19,13 +19,13 @@ header {
   position: relative;
 }
 /*hide labels to meet figma design*/
-label{
+label {
   display: none;
 }
 
 
 .logo {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
