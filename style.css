@@ -8,7 +8,6 @@
   list-style: none;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -18,18 +17,18 @@ header {
   width: 100%;
   position: relative;
 }
-/*hide labels to meet figma design*/
+
+/* hide labels to meet figma design */
 label {
   display: none;
 }
-
 
 .logo {
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
-  color: #0019FA;
+  color: #0019fa;
   font-family: "Poppins", sans-serif;
   padding-left: 30px;
 }
@@ -96,7 +95,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #4D5EFF;
+  color: #4d5eff;
 }
 
 .container .social-media {
@@ -180,7 +179,7 @@ figure img {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   line-height: 16px;
-  color: #4D5666;
+  color: #4d5666;
 }
 
 footer p {
@@ -218,7 +217,7 @@ footer p {
   line-height: 16px;
   font-weight: 500;
   font-size: 12px;
-  color: #0019FA;
+  color: #0019fa;
   background: #ebebff;
   font-family: "Poppins", sans-serif;
   line-break: strict;
@@ -235,8 +234,8 @@ footer p {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: 1px solid #0019FA;
-  color: #0019FA;
+  border: 1px solid #0019fa;
+  color: #0019fa;
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
@@ -247,7 +246,7 @@ footer p {
 
 .btn:hover {
   top: 12px;
-  background: #0019FA;
+  background: #0019fa;
   color: #fff;
 }
 
@@ -305,7 +304,7 @@ footer p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #4D5EFF;
+  color: #4d5eff;
 }
 
 .social-icons {
@@ -324,8 +323,8 @@ footer p {
   text-align: center;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: 2px solid #0019FA;
-  color: #0019FA;
+  border: 2px solid #0019fa;
+  color: #0019fa;
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
@@ -414,7 +413,7 @@ footer p {
 }
 
 footer {
-  background: #6070FF;
+  background: #6070ff;
   background-image: url("images/contact-form-image.png");
   background-position: right;
   background-size: contain;
@@ -480,11 +479,11 @@ form textarea {
   width: 50%;
   padding: 16px;
   font-size: 17px;
-  color: #0019FA;
+  color: #0019fa;
 }
 
 .contact-btn button:hover {
-  background: #0019FA;
+  background: #0019fa;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
@@ -629,7 +628,7 @@ form textarea {
   }
 
   footer {
-    background: #6070FF;
+    background: #6070ff;
     background-image: url("images/desktop/contact-form-background.svg");
     background-position: right;
     background-size: contain;
