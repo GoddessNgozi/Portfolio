@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"/>
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Ngozika</a>
-      <nav>
-        <ul class="menu">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <img class="menu-bar" src="images/hamburger.png" alt="Menu"/>
-      </nav>
-    </header>
 
-    <main>
-        <section class="container">
-          <div  class="name">
-          <h1>I'm Ngozika</h1>
-          <h1 class="hidy">Glad to see you!</h1>
-          <h1 class="showy">Glad to see</h1>
-          <h1 class="showy">you!</h1>
-          </div>
-          <p class="about-me">
-            I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-          </p>
-          <p class="connect">LET’S CONNECT</p>
-          <ul class="social-media">
-            <li>
-              <a href="https://twitter.com/ngozikanwocha">
-                <img src="images/twitter.svg" alt="Twitter"/>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ngozikanwocha/">
-                <img src="images/linkedin.svg" alt="Linkedin"/>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/medium.svg" alt="Medium"/>
-              </a>
-            </li>
-            <li><a href="https://github.com/ngozikanwocha">
-              <img src="images/github.svg" alt="Github"/>
-            </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/angel-list.svg" alt="Angel-List"/>
-              </a>
-            </li>
-          </ul>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+</head>
 
-    <section class="works">
+<body>
+  <header>
+    <a href="#" class="logo">Ngozika</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <img class="menu-bar" id="hambuger-menu" src="images/hamburger.png" alt="Menu" />
+    </nav>
+    
+    <aside id="mobilePopup">
+      <button type="button" id="close-mobile-nav">X</button>
+      <ul class="mobile-menu" id="mobile-menu">
+        <li><a href="#works">Portfolio</a></li>
+        <li><a href="#about-myself">About</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </aside>
+
+
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="name">
+        <h1>I'm Ngozika</h1>
+        <h1 class="hidy">Glad to see you!</h1>
+        <h1 class="showy">Glad to see</h1>
+        <h1 class="showy">you!</h1>
+      </div>
+      <p class="about-me">
+        I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+        experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <p class="connect">LET’S CONNECT</p>
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com/ngozikanwocha">
+            <img src="images/twitter.svg" alt="Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ngozikanwocha/">
+            <img src="images/linkedin.svg" alt="Linkedin" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/medium.svg" alt="Medium" />
+          </a>
+        </li>
+        <li><a href="https://github.com/ngozikanwocha">
+            <img src="images/github.svg" alt="Github" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/angel-list.svg" alt="Angel-List" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works" id="works">
       <div class="project-card">
         <figure>
-          <img src="images/desktop/tonic-project-desktop.svg" alt="Projects"/>
+          <img src="images/desktop/tonic-project-desktop.svg" alt="Projects" />
         </figure>
         <div class="project-details">
           <h4>Tonic</h4>
           <ul class="project-meta">
             <li class="meta">CANOPY</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">Back End Dev</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">2015</li>
           </ul>
@@ -91,18 +105,18 @@
       </div>
       <div class="project-card">
         <figure>
-          <img src="images/desktop/multi-post-stories-project.svg" alt="Projects"/>
+          <img src="images/desktop/multi-post-stories-project.svg" alt="Projects" />
         </figure>
         <div class="project-details">
           <h4>Multi-Post <br> Stories</h4>
           <ul class="project-meta">
             <li class="meta">CANOPY</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">Back End Dev</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">2015</li>
           </ul>
@@ -119,18 +133,18 @@
       </div>
       <div class="project-card">
         <figure>
-          <img src="images/desktop/facebook-360-project.svg" alt="Projects"/>
+          <img src="images/desktop/facebook-360-project.svg" alt="Projects" />
         </figure>
         <div class="project-details">
           <h4>Tonic</h4>
           <ul class="project-meta">
             <li class="meta">CANOPY</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">Back End Dev</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">2015</li>
           </ul>
@@ -147,23 +161,24 @@
       </div>
       <div class="project-card">
         <figure>
-          <img src="images/desktop/uber-navigation-project.svg" alt="Projects"/>
+          <img src="images/desktop/uber-navigation-project.svg" alt="Projects" />
         </figure>
         <div class="project-details">
           <h4>Uber Navigation</h4>
           <ul class="project-meta">
             <li class="meta">Uber</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">Lead Developer</li>
             <li>
-              <img src="images/Counter.png" alt=""/>
+              <img src="images/Counter.png" alt="" />
             </li>
             <li class="meta-data">2018</li>
           </ul>
           <p>
-            A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+            A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer:
+            your car.
           </p>
           <ul class="languages">
             <li>html</li>
@@ -176,7 +191,7 @@
       </div>
     </section>
 
-    <section class="about-myself">
+    <section class="about-myself" id="about-myself">
       <div class="about">
         <div class="left-block">
           <h2 class="title">
@@ -193,24 +208,21 @@
           </a>
           <ul class="social-icons">
             <li>
-              <a href="https://github.com/ngozikanwocha" target="blank"><img src="images/github.svg"
-                  alt="Github"/></a>
+              <a href="https://github.com/ngozikanwocha" target="blank"><img src="images/github.svg" alt="Github" /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/ngozikanwocha" target="blank"><img
-                  src="images/linkedin.svg" alt="linkedin"/></a>
+              <a href="https://www.linkedin.com/in/ngozikanwocha" target="blank"><img src="images/linkedin.svg"
+                  alt="linkedin" /></a>
             </li>
             <li>
-              <a href="#" target="blank"><img
-                  src="images/angel-list.svg" alt="angellist"/></a>
+              <a href="#" target="blank"><img src="images/angel-list.svg" alt="angellist" /></a>
             </li>
             <li>
               <a href="https://twitter.com/ngozikanwocha" target="blank"><img src="images/twitter.svg"
-                  alt="twitter"/></a>
+                  alt="twitter" /></a>
             </li>
             <li>
-              <a href="#" target="blank"><img src="images/medium.svg"
-                  alt="Medium"/></a>
+              <a href="#" target="blank"><img src="images/medium.svg" alt="Medium" /></a>
             </li>
           </ul>
           <button class="resume-btn" type="submit">Get my resume</button>
@@ -219,33 +231,33 @@
           <ul class="about-languages">
             <li class="about-menus">
               <p>Languages</p>
-              <img src="images/arrow.png" alt="arrow-down"/>
+              <img src="images/arrow.png" alt="arrow-down" />
             </li>
           </ul>
           <ul class="language-list">
             <li>
-              <img src="images/Ellipse-1.png" alt="JavaScript"/>
+              <img src="images/Ellipse-1.png" alt="JavaScript" />
               <p>JavaScript</p>
             </li>
             <li>
-              <img src="images/Ellipse-2.png" alt="HTML5"/>
+              <img src="images/Ellipse-2.png" alt="HTML5" />
               <p>HTML</p>
             </li>
             <li>
-              <img src="images/Ellipse-3.png" alt="CSS3"/>
+              <img src="images/Ellipse-3.png" alt="CSS3" />
               <p>CSS</p>
             </li>
           </ul>
           <ul>
             <li class="about-menus" id="frameworks">
               <p>Frameworks</p>
-              <img src="images/arrow-right.png" alt=""/>
+              <img src="images/arrow-right.png" alt="" />
             </li>
           </ul>
           <ul>
             <li class="about-menus" id="skills">
               <p>Skills</p>
-              <img src="images/arrow-right.png" alt="arrow bottom icon"/>
+              <img src="images/arrow-right.png" alt="arrow bottom icon" />
             </li>
           </ul>
         </div>
@@ -253,9 +265,10 @@
     </section>
   </main>
   <footer>
-    <div class="contact-form">
+    <section class="contact-form" id="contact-form">
       <h2>Contact Me</h2>
-      <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that
+        needs coding. I’d love to help with it</p>
       <form class="form-container" action="https://formspree.io/f/mgedjaao" method="post">
         <ul>
           <li>
@@ -265,18 +278,21 @@
             <input type="email" name="email" placeholder="natajayan14@gmail.com">
           </li>
           <li>
-          <textarea name="Message" id="message" cols="30" required rows="10" maxlength="500" placeholder="Write your message here"></textarea>
+            <textarea name="Message" id="message" cols="30" required rows="10" maxlength="500"
+              placeholder="Write your message here"></textarea>
           </li>
           <li>
             <div class="contact-btn">
-            <button type="submit" value="Get It touch">
-              Get It touch
-            </button>
+              <button type="submit" value="Get It touch">
+                Get It touch
+              </button>
             </div>
           </li>
         </ul>
       </form>
-    </div>
+    </section>
   </footer>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
