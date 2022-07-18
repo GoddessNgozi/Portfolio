@@ -1,27 +1,16 @@
-let mobileNavButton = document.getElementById("hambuger-menu")
-let navPopup = document.getElementById("mobilePopup")
-let closeNavPopup = document.getElementById("close-mobile-nav")
+const mobileNavButton = document.getElementById('hambuger-menu');
+const navPopup = document.getElementById('mobilePopup');
+const closeNavPopup = document.getElementById('close-mobile-nav');
+const navMenuButton = document.getElementById('mobile-menu');
 
-let toggleMenu = false
-let closePopupFunction = false
-
-mobileNavButton.addEventListener("click", function() {
-    if(toggleMenu === false){
-        mobilePopup .style.visibility = "visible";
-    }
+mobileNavButton.addEventListener('click', () => {
+  navPopup.style.visibility = 'visible';
 });
 
-  
-closeNavPopup.addEventListener("click", function(){
-    if(toggleMenu === false){
-        mobilePopup.style.visibility = "hidden"; 
-    }
+closeNavPopup.addEventListener('click', () => {
+  navPopup.style.visibility = 'hidden';
 });
 
-let navMenuButton= document.getElementById("mobile-menu")
-
-navMenuButton.addEventListener("click", function(){
-    if(toggleMenu=== false){
-        mobilePopup.style.visibility = "hidden";
-    }
+navMenuButton.addEventListener('click', () => {
+  navPopup.style.visibility = 'hidden';
 });
