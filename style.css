@@ -531,6 +531,7 @@ form textarea {
   background: #6070ff;
   border: none;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
