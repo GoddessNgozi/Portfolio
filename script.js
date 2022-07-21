@@ -157,3 +157,14 @@ document.querySelectorAll('.openPopupWindow').forEach((item) => {
     blurElements([headlineSection, workSection, aboutSection, contactSection], true);
   });
 });
+
+//FORM VALIDATION
+const form = document.getElementById('contact-form')
+const email = document.getElementById('email')
+const errorMessage = document.getElementById('error-message')
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessage.innerHTML = ('Email should be in lowercase')
+    e.preventDefault()
+  }
+});
