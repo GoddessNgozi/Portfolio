@@ -625,6 +625,11 @@ form textarea {
   cursor: pointer;
 }
 
+#error-message{
+  color: red;
+  margin-right: 160px;
+}
+
 @media (min-width: 768px) {
   .logo {
     margin-left: 100px;
