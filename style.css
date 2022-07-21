@@ -515,6 +515,10 @@ footer {
   align-items: center;
 }
 
+.error-field {
+  align-self: center;
+}
+
 footer h2 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -623,6 +627,10 @@ form textarea {
   border: none;
   margin-top: 50px;
   cursor: pointer;
+}
+
+#error-message {
+  color: red;
 }
 
 @media (min-width: 768px) {
