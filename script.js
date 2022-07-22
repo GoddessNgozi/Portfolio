@@ -159,7 +159,7 @@ document.querySelectorAll('.openPopupWindow').forEach((item) => {
 });
 
 // FORM VALIDATION
-const form = document.getElementById('contact-form');
+const form = document.getElementById('contact_form');
 const email = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
 form.addEventListener('submit', (e) => {
