@@ -1,3 +1,4 @@
+// POPUP MENU
 const mobileNavButton = document.getElementById('hambuger-menu');
 const navPopup = document.getElementById('mobilePopup');
 const closeNavPopup = document.getElementById('close-mobile-nav');
