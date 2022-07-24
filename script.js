@@ -22,28 +22,7 @@ const headlineSection = document.querySelector('.container');
 const aboutSection = document.getElementById('about-myself');
 const contactSection = document.getElementById('contact-form');
 const closePopupButton = document.getElementById('closePopupIcon');
-// hides elements
-const hide = (args) => {
-  args.forEach((arg) => {
-    arg.style.display = 'none';
-  });
-};
-// show elements
-const show = (args) => {
-  args.forEach((arg) => {
-    arg.style.display = 'flex';
-  });
-};
-// blur elements
-const blurElements = (args, state) => {
-  args.forEach((element) => {
-    if (state) {
-      element.style.filter = 'blur(3px)';
-    } else {
-      element.style.filter = 'blur(0px)';
-    }
-  });
-};
+
 // Projects Dynamic data
 const workProjects = [
   {
@@ -140,22 +119,25 @@ workProjects.forEach((project) => {
 });
 // project container
 workSection.innerHTML = projectHTML;
-const popupWindow = () => {
-  show([popupContainer]);
-  // body.style.overflow = 'hidden';
-};
-const closePopupWindow = () => {
-  hide([popupContainer]);
-  blurElements([headlineSection, workSection, aboutSection, contactSection], false);
-};
-// close the popup modal
-closePopupButton.addEventListener('click', closePopupWindow);
+
 // iterate through the items and listen for popupwindow click
-document.querySelectorAll('.openPopupWindow').forEach((item) => {
-  item.addEventListener('click', () => {
-    popupWindow();
-    blurElements([headlineSection, workSection, aboutSection, contactSection], true);
+document.querySelectorAll('.openPopupWindow').forEach((benButton) => {
+  benButton.addEventListener('click', () => {
+    popupContainer.style.display = 'flex';
+    headlineSection.style.filter = 'blur(3px)';
+    workSection.style.filter = 'blur(3px)';
+    aboutSection.style.filter = 'blur(3px)';
+    contactSection.style.filter = 'blur(3px)';
   });
+});
+
+// close the popupwindow
+closePopupButton.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+  headlineSection.style.filter = 'blur(0px)';
+  workSection.style.filter = 'blur(0px)';
+  aboutSection.style.filter = 'blur(0px)';
+  contactSection.style.filter = 'blur(0px)';
 });
 
 // FORM VALIDATION
