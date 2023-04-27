@@ -24,7 +24,7 @@ header {
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
-  color: #6070ff;
+  color: #f96adf;
   font-family: "Poppins", sans-serif;
   padding-left: 30px;
 }
@@ -44,7 +44,7 @@ main {
 }
 
 .container {
-  background-image: url("images/background-image.svg");
+ /* background-image: url("images/background-image.svg"); */
   background-clip: padding-box;
   background-position: top;
   background-size: cover;
@@ -91,7 +91,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #f96adf;
 }
 
 .container .social-media {
@@ -254,7 +254,7 @@ figure img {
   border-radius: 6px;
   padding: 15px 16px 15px 16px;
   align-items: center;
-  color: #6070ff;
+  color: #f96adf;
 }
 
 .languages {
@@ -299,8 +299,8 @@ footer p {
   line-height: 16px;
   font-weight: 500;
   font-size: 12px;
-  color: #6070ff;
-  background: #ebebff;
+  color: #f96adf;
+  background: #f9e5f5;
   font-family: "Poppins", sans-serif;
   line-break: strict;
 }
@@ -316,8 +316,8 @@ footer p {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: 1px solid #6070ff;
-  color: #6070ff;
+  border: 1px solid #f96adf;
+  color: #f96adf;
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
@@ -329,7 +329,7 @@ footer p {
 
 .btn:hover {
   top: 12px;
-  background: #6070ff;
+  background: #f96adf;
   color: #fff;
 }
 
@@ -387,7 +387,7 @@ footer p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #f88be4;
 }
 
 .social-icons {
@@ -406,8 +406,8 @@ footer p {
   text-align: center;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: 2px solid #6070ff;
-  color: #6070ff;
+  border: 2px solid #f96adf;
+  color: #f96adf;
   background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
@@ -417,7 +417,7 @@ footer p {
 
 .resume-btn:hover {
   top: 12px;
-  background: #6070ff;
+  background: #f96adf;
   color: #fff;
 }
 
@@ -496,8 +496,8 @@ footer p {
 }
 
 footer {
-  background: #6070ff;
-  background-image: url("images/contact-form-image.png");
+  background: #f7c5ef;
+  /* background-image: url("images/contact-form-image.png"); */
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -566,11 +566,11 @@ form textarea {
   width: 50%;
   padding: 16px;
   font-size: 17px;
-  color: #6070ff;
+  color: #f96adf;
 }
 
 .contact-btn button:hover {
-  background: #6070ff;
+  background: #f96adf;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
@@ -587,7 +587,7 @@ form textarea {
   width: 100%;
   height: 100vh;
   top: 0;
-  background-color: #6070ff;
+  background-color: #f96adf;
   mix-blend-mode: multiply;
   backdrop-filter: blur(6px);
 }
@@ -620,7 +620,7 @@ form textarea {
   float: right;
   margin-right: 50px;
   color: #fff;
-  background: #6070ff;
+  background: #f96adf;
   border: none;
   margin-top: 50px;
   cursor: pointer;
@@ -633,10 +633,11 @@ form textarea {
 @media (min-width: 768px) {
   .logo {
     margin-left: 100px;
-    color: #2230d2;
+    color: #fa61de;
     animation-name: rotate-logo;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+    font-size: x-large;
   }
 
   @keyframes rotate-logo {
@@ -669,14 +670,14 @@ form textarea {
   .menu a {
     font-family: "poppins", sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
     color: #344563;
     text-decoration: none;
   }
 
   .container {
-    background-image: url(images/desktop/headline-background.svg);
+    /* background-image: url(images/desktop/headline-background.svg); */
     padding: 6rem;
     padding: 10rem;
     padding-right: 15rem;
@@ -792,8 +793,8 @@ form textarea {
   }
 
   footer {
-    background: #6070ff;
-    background-image: url("images/desktop/contact-form-background.svg");
+    background: #fb8be8;
+    /* background-image: url("images/desktop/contact-form-background.svg"); */
     background-position: right;
     background-size: contain;
     padding: 1rem;
